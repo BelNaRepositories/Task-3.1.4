@@ -1,5 +1,6 @@
 package web.model;
 
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
@@ -7,7 +8,7 @@ import javax.validation.constraints.NotEmpty;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Objects;
-
+@Data
 @Entity
 @Table(name="app_user")
 public class User implements UserDetails {
@@ -40,6 +41,10 @@ public class User implements UserDetails {
     public User() {
     }
 
+    public User(Long id, @NotEmpty String ssoId) {
+        this.id = id;
+        this.ssoId = ssoId;
+    }
 
     public User(Long id, String ssoId, String password, String firstName, String lastName, String email, Collection<Role> roles) {
         this.id = id;

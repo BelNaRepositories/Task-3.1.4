@@ -80,4 +80,3 @@ public class UserDaoImp implements UserDao {
         return entityManager.find(User.class, id);
     }
 }
-
