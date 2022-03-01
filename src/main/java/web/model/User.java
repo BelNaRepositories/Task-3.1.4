@@ -50,8 +50,15 @@ public class User implements UserDetails {
         this.id = id;
         this.ssoId = ssoId;
         this.password = password;
-
         this.firstName = firstName;
+        
+        
+
+
+
+
+
+
         this.lastName = lastName;
         this.email = email;
         this.roles = roles;
