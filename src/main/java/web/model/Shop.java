@@ -49,15 +49,15 @@ public class Shop {
     public Shop() {
 
     }
-    public void addComment(Item item) {
-        items.add(item);
-        item.setItem(this);
-    }
-
-    public void removeComment(Item item) {
-        items.remove(item);
-        item.setShop(null);
-    }
+//    public void addComment(Item item) {
+//        items.add(item);
+//        item.setItem(this);
+//    }
+//
+//    public void removeComment(Item item) {
+//        items.remove(item);
+//        item.setShop(null);
+//    }
 
     public Shop(Long id, String name, String email, String phone, String description, int count, List<Item> items) {
         this.id = id;

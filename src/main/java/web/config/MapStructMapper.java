@@ -2,7 +2,9 @@ package web.config;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import web.dto.ItemDto;
 import web.dto.ShopDto;
+import web.model.Item;
 import web.model.Shop;
 
 import java.util.ArrayList;
@@ -18,8 +20,8 @@ public interface MapStructMapper {
     List<ShopDto> allShopsToShopsDto(List<Shop> list);
 
 //    List<ShopDto> getAllShopDto(Integer pageNo, Integer pageSize, String sortBy)
-//    ItemDto itemToItemDto(Item item);
-//    Item itemDtoToItem(ItemDto itemDto);
-
+    ItemDto itemToItemDto(Item item);
+    Item itemDtoToItem(ItemDto itemDto);
+    List<ItemDto> allItemsToItemsDto(List<Item> list);
 
 }

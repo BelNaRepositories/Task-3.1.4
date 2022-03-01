@@ -21,9 +21,6 @@ public class RestPaginationShop {
     private final MapStructMapper mapper;
     private final PaginationServiceShop service;
 
-//    @Autowired
-//    MapStructMapper mapper;
-//    PaginationServiceShop service;
     public RestPaginationShop(MapStructMapper mapper, PaginationServiceShop service) {
         this.mapper = mapper;
         this.service = service;

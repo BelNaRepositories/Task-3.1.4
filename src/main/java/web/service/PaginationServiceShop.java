@@ -32,5 +32,4 @@ public class PaginationServiceShop {
             return new ArrayList<Shop>();
         }
     }
-
 }
