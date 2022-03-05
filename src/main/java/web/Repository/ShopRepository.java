@@ -5,8 +5,9 @@ import org.springframework.stereotype.Repository;
 import web.model.Shop;
 
 
-@Repository
+//@Repository
 public interface ShopRepository
-        extends PagingAndSortingRepository<Shop, Long> {
+//        extends PagingAndSortingRepository<Shop, Long>
+{
 }
 

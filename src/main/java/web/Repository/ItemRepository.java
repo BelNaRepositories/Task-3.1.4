@@ -5,7 +5,8 @@ import org.springframework.stereotype.Repository;
 import web.model.Item;
 
 
-@Repository
+//@Repository
 public interface ItemRepository
-        extends PagingAndSortingRepository<Item, Long> {
+//        extends PagingAndSortingRepository<Item, Long>
+{
 }

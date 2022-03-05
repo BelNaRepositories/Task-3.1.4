@@ -3,6 +3,8 @@ package web.config;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
+
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;
 import web.dto.ItemDto;
 import web.dto.ShopDto;
@@ -54,7 +56,7 @@ public class MapStructMapperImpl implements MapStructMapper {
     }
 
     @Override
-    public List<ShopDto> allShopsToShopsDto(List<Shop> list) {
+    public List<ShopDto> allShopsToShopsDto(Page<Shop> list) {
         if ( list == null ) {
             return null;
         }

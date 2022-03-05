@@ -1,13 +1,14 @@
 package web.config;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
+
+
+import org.springframework.data.domain.Page;
 import web.dto.ItemDto;
 import web.dto.ShopDto;
 import web.model.Item;
 import web.model.Shop;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Mapper(componentModel = "spring"
