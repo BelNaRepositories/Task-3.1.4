@@ -6,11 +6,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import web.Repository.ItemRepository;
-import web.Repository.ShopRepository;
 import web.Repository.UserRepositoryy;
-import web.model.Item;
-import web.model.Shop;
 import web.model.User;
 
 import java.util.ArrayList;
